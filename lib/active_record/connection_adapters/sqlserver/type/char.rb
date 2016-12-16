@@ -20,7 +20,7 @@ module ActiveRecord
             end
           end
 
-          class Data
+          class Data < ::String
 
             def initialize(value)
               @quoted_id = value.respond_to?(:quoted_id)
